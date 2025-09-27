@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteos de Dinero — Portal Moderno</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Hero -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <nav class="nav">
+      <div class="logo">
+        <div class="logo-circle"></div>
+      
+      </div>
+      <div class="nav-links">
+        <button id="openProfileBtn" class="btn-ghost">
+          <i class="fa-solid fa-user"></i>
+          <span>Mi perfil</span>
+        </button>
+        <button id="openSearchBtn" class="btn-ghost">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>Buscar</span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="gradient-text">Sorteos de Dinero</span>
+      </h1>
+      <p class="hero-subtitle">Participa desde $10 MXN — Transparencia, seguridad y premios reales.</p>
+      <div class="hero-ctas">
+      
+        <a href="#como-funciona" class="btn-outline">
+          <i class="fa-solid fa-play"></i>
+          Ver cómo funciona
+        </a>
+      </div>
+    </div>
+
+    <!-- Contenedor del QR -->
+    <div id="qrcode-container">
+      <h4>Escanea y entra desde tu celular</h4>
+      <div id="qrcode"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cómo Funciona -->
+    <section id="como-funciona" class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fa-solid fa-lightbulb"></i>
+          ¿Cómo Funciona?
+        </h2>
+        <div class="steps-grid">
+          <div class="step-card" data-step="1">
+            <div class="step-icon">📝</div>
+            <h3>Regístrate</h3>
+            <p>Completa el formulario con tus datos básicos</p>
+          </div>
+          <div class="step-card" data-step="2">
+            <div class="step-icon">💳</div>
+            <h3>Paga $10</h3>
+            <p>Pago seguro y protegido</p>
+          </div>
+          <div class="step-card" data-step="3">
+            <div class="step-icon">⏰</div>
+            <h3>Espera</h3>
+            <p>El sistema elige ganadores automáticamente</p>
+          </div>
+          <div class="step-card" data-step="4">
+            <div class="step-icon">🎉</div>
+            <h3>¡Gana!</h3>
+            <p>Recibe tu premio directamente</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Categorías de Premios -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fa-solid fa-gift"></i>
+          SORTEOS FELICES
+        </h2>
+        <div class="prizes-grid">
+          <div class="prize-card basic">
+            <div class="prize-header">
+              <h3>Sorteo Básico</h3>
+              <div class="prize-amount">$250</div>
+            </div>
+            <ul class="prize-features">
+              <li><i class="fa-solid fa-check"></i>25 participantes máx.</li>
+              <li><i class="fa-solid fa-check"></i>Sorteo diario</li>
+              <li><i class="fa-solid fa-check"></i>Pago inmediato</li>
+            </ul>
+            <div class="prize-fee">$10 MXN</div>
+          </div>
+
+          <div class="prize-card standard">
+            <div class="prize-header">
+              <h3>Sorteo Estándar</h3>
+              <div class="prize-amount">$500</div>
+            </div>
+            <ul class="prize-features">
+              <li><i class="fa-solid fa-check"></i>50 participantes máx.</li>
+              <li><i class="fa-solid fa-check"></i>Sorteo semanal</li>
+              <li><i class="fa-solid fa-check"></i>Pago garantizado</li>
+            </ul>
+            <div class="prize-fee">$10 MXN</div>
+          </div>
+
+          <div class="prize-card premium">
+            <div class="prize-badge">Más Popular</div>
+            <div class="prize-header">
+              <h3>Gran Premio</h3>
+              <div class="prize-amount">$2,000</div>
+            </div>
+            <ul class="prize-features">
+              <li><i class="fa-solid fa-check"></i>200 participantes máx.</li>
+              <li><i class="fa-solid fa-check"></i>Sorteo mensual</li>
+              <li><i class="fa-solid fa-check"></i>Premio verificado</li>
+            </ul>
+            <div class="prize-fee">$10 MXN</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ 
+
+    <!-- Seguridad y Confianza -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fa-solid fa-shield-halved"></i>
+          Seguridad y Confianza
+        </h2>
+        <div class="security-grid">
+          <div class="security-card">
+            <div class="security-icon">🔒</div>
+            <h3>Encriptación SSL</h3>
+            <p>Todos los datos están protegidos con cifrado de nivel bancario</p>
+          </div>
+          <div class="security-card">
+            <div class="security-icon">✅</div>
+            <h3>Sorteos Verificados</h3>
+            <p>Sistema auditado por terceros independientes</p>
+          </div>
+          <div class="security-card">
+            <div class="security-icon">🏆</div>
+            <h3>99.9% Confiabilidad</h3>
+            <p>Miles de ganadores satisfechos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Beneficios -->
+    <section class="section bg-gradient">
+      <div class="container">
+        <div class="card glass">
+          <h2 class="section-title">
+            <i class="fa-solid fa-bullseye"></i>
+            Beneficios de Participar
+          </h2>
+          <div class="benefits-grid">
+            <div class="benefit-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Sorteos transparentes y verificables</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Premios garantizados y verificados</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Soporte técnico 24/7</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Pagos seguros y protegidos</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Sin comisiones ocultas</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <span>Historial completo de participaciones</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Últimos Ganadores 
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h2 class="section-title">
+            <i class="fa-solid fa-trophy"></i>
+            Últimos Ganadores
+          </h2>
+          <div id="winners" class="winners-grid"></div>
+        </div>
+      </div>
+    </section>
+
+
+    -->
+
+
+
+  
+    <!-- Panel de Administración -->
+    <section class="section admin-section">
+        <div class="container">
+            <div class="card glass">
+                <h2 class="section-title">
+                    <i class="fas fa-cog"></i>
+                    Panel de Administración
+                </h2>
+                <form id="createRoomForm" class="room-form">
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label>Nombre de la Sala</label>
+                            <input type="text" id="roomName" placeholder="Sorteo Navideño" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Máximo Participantes</label>
+                            <input type="number" id="maxParticipants" value="50" min="5" max="100" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Monto ($)</label>
+                            <input type="number" id="roomAmount" value="10" min="1" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Fecha y Hora de Cierre</label>
+                            <input type="datetime-local" id="closingDate" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Crear Sala
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grupo Actual -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="card glass" id="currentGroupCard">
+                <div id="noGroupState" class="no-group-state">
+                    <h2 class="section-title">
+                        <i class="fa-solid fa-users"></i>
+                        Sin Grupo
+                    </h2>
+                    <p class="no-group-message">No estás participando en ningún sorteo actualmente</p>
+                    <button id="joinRoomBtn" class="btn-primary">
+                        <i class="fas fa-door-open"></i>
+                        Unirse a un Sorteo
+                    </button>
+                    <button id="viewRoomsBtn" class="btn-secondary" style="margin-top: 1rem;">
+                        <i class="fas fa-list"></i>
+                        Ver Todos los Sorteos
+                    </button>
+                </div>
+
+                <div id="groupState" class="group-state" style="display: none;">
+                    <div class="group-header">
+                        <h2 class="section-title">
+                            <i class="fa-solid fa-users"></i>
+                            <span id="currentRoomName">Grupo Actual</span>
+                            <span class="participants-count">(<span id="participantsCount">0</span>/<span id="maxParticipantsCount">50</span>)</span>
+                        </h2>
+                        <div class="room-info">
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <span id="roomDate">--</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <span id="roomTime">--</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dollar-sign"></i>
+                                <span id="roomAmount">$0</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="group-actions">
+                        <button id="selectWinnerBtn" class="btn-success">
+                            <i class="fas fa-trophy"></i>
+                            Seleccionar Ganador
+                        </button>
+                        <button id="viewRoomsBtn2" class="btn-secondary">
+                            <i class="fas fa-list"></i>
+                            Ver Otros Sorteos
+                        </button>
+                     
+                        <button id="leaveRoomBtn" class="btn-danger">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Salir del Grupo
+                        </button>
+                      
+
+                    </div>
+
+                    <div id="grupoNumeros" class="grid-participantes"></div>
+                    <div id="participantsList" class="participants-list"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Sorteos Disponibles -->
+    <div id="roomsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>
+                    <i class="fas fa-list"></i>
+                    Sorteos Disponibles
+                </h3>
+                <button class="modal-close" id="closeModalBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="roomsList" class="rooms-list">
+                <!-- Los sorteos se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </div>
+<!-- Modal de Formulario de Registro -->
+<div id="registrationModal" class="modal">
+  <div class="modal-content registration-modal">
+    <div class="contenedor-principal">
+      <div class="contenedor-formulario">
+        <!-- Título principal -->
+        <div class="encabezado animacion-aparecer">
+          <div class="icono-principal">
+            <i class="fas fa-ticket-alt"></i>
+          </div>
+          <h1 class="titulo-principal">Registro de Participantes</h1>
+          <p class="subtitulo">
+            Únete al sorteo "<span id="roomNameInForm">Sorteo</span>" por solo $<span id="roomAmountInForm">10</span>
+          </p>
+        </div>
+
+        <!-- Tarjeta del formulario -->
+        <div class="tarjeta-formulario animacion-deslizar-arriba">
+          <form id="formularioRegistro" class="formulario">
+            <!-- Campo Nombre -->
+            <div class="grupo-input">
+              <label class="etiqueta">
+                <i class="fas fa-user"></i>
+                Nombre completo
+              </label>
+              <div class="contenedor-input">
+                <input type="text" id="nombre" class="input-campo" placeholder="Ej: Juan Pérez" required>
+              </div>
+              <span id="error-nombre" class="mensaje-error"></span>
+            </div>
+
+            <!-- Campo Edad -->
+            <div class="grupo-input">
+              <label class="etiqueta">
+                <i class="fas fa-calendar"></i>
+                Edad
+              </label>
+              <div class="contenedor-input">
+                <input type="number" id="edad" class="input-campo" placeholder="Ej: 25" min="1" required>
+              </div>
+              <span id="error-edad" class="mensaje-error"></span>
+            </div>
+
+            <!-- Campo Tarjeta -->
+            <div class="grupo-input">
+              <label class="etiqueta">
+                <i class="fas fa-credit-card"></i>
+                Número de tarjeta
+              </label>
+              <div class="contenedor-input">
+                <input type="text" id="tarjeta" class="input-campo input-tarjeta" placeholder="0000 0000 0000 0000"
+                  maxlength="19" required>
+              </div>
+              <span id="error-tarjeta" class="mensaje-error"></span>
+            </div>
+
+            <!-- Fila: Fecha y CVV -->
+            <div class="fila-campos">
+              <div class="grupo-input">
+                <label class="etiqueta">
+                  <i class="fas fa-calendar-alt"></i>
+                  Vencimiento
+                </label>
+                <div class="contenedor-input">
+                  <input type="text" id="fechaVencimiento" class="input-campo input-fecha" placeholder="MM/AA"
+                    maxlength="5" required>
+                </div>
+                <span id="error-fechaVencimiento" class="mensaje-error"></span>
+              </div>
+
+              <div class="grupo-input">
+                <label class="etiqueta">
+                  <i class="fas fa-lock"></i>
+                  CVV
+                </label>
+                <div class="contenedor-input">
+                  <input type="text" id="codigoSeguridad" class="input-campo input-cvv" placeholder="000" maxlength="4"
+                    required>
+                </div>
+                <span id="error-codigoSeguridad" class="mensaje-error"></span>
+              </div>
+            </div>
+
+            <!-- Botón de Envío -->
+            <button type="submit" id="botonEnvio" class="boton-envio">
+              <span class="texto-boton">Participar</span>
+              <span id="spinner" class="spinner"></span>
+            </button>
+
+            <!-- Texto términos -->
+            <p class="texto-terminos">
+              Al registrarte aceptas los <a href="#" id="abrirTerminos">términos y condiciones</a>.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón cerrar modal -->
+    <button class="modal-close" id="closeRegistrationBtn">
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Modal Términos -->
+<div class="modal-overlay" id="modalTerminos">
+  <div class="modal-contenido">
+    <div class="modal-encabezado">
+      <h2 class="modal-titulo">Términos y Condiciones</h2>
+      <button id="cerrarTerminos" class="boton-cerrar">&times;</button>
+    </div>
+    <div class="modal-cuerpo">
+      <div class="alerta-terminos">
+        <i class="fas fa-info-circle"></i>
+        <p>Por favor, lee atentamente los términos antes de participar.</p>
+      </div>
+      <ul class="lista-terminos">
+        <li><span class="punto-lista"></span> La participación es válida solo para mayores de 18 años.</li>
+        <li><span class="punto-lista"></span> No se reembolsan los $10 de inscripción.</li>
+        <li><span class="punto-lista"></span> La fecha del sorteo será anunciada en nuestras redes.</li>
+      </ul>
+      <p class="texto-destacado">¿Aceptas los términos?</p>
+    </div>
+    <div class="modal-botones">
+      <button id="cancelarTerminos" class="boton-cancelar">Cancelar</button>
+      <button id="aceptarTerminos" class="boton-aceptar">
+        <i class="fas fa-check"></i> Aceptar
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Éxito -->
+<div class="modal-overlay" id="modalExito">
+  <div class="modal-contenido modal-exito">
+    <div class="icono-exito">
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <h2 class="titulo-exito">¡Registro Exitoso!</h2>
+    <p class="mensaje-exito">Tu participación ha sido registrada correctamente.</p>
+    <button id="cerrarExito" class="boton-entendido">Entendido</button>
+  </div>
+</div>
+
+
+    <!-- Winner Animation Overlay -->
+    <div id="winnerOverlay" class="winner-overlay">
+        <div class="winner-content">
+            <div class="confetti"></div>
+            <h2 class="winner-title">🎉 ¡GANADOR! 🎉</h2>
+            <div class="winner-info">
+                <div class="winner-number" id="winnerNumber">--</div>
+                <div class="winner-name" id="winnerName">Participante</div>
+            </div>
+            <button id="closeWinnerBtn" class="btn-primary">
+                <i class="fas fa-check"></i>
+                Continuar
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
+
+        <!-- Testimonios -->
+    <section class="section bg-dark">
+      <div class="container">
+        <h2 class="section-title">
+          <i class="fa-solid fa-star"></i>
+          Lo que Dicen Nuestros Ganadores
+        </h2>
+
+        <!-- Formulario para dejar opinión -->
+        <div class="testimonial-form">
+          <h3>Agrega tu opinión</h3>
+          <textarea id="testimonialText" placeholder="Escribe tu opinión aquí..."></textarea>
+          <div class="stars-input">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+          </div>
+          <button id="submitTestimonial">Enviar Opinión</button>
+        </div>
+
+        <!-- Contenedor de testimonios -->
+        <div class="testimonials-grid" id="testimonialsGrid">
+          <!-- Testimonios existentes se cargarán dinámicamente -->
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contacto -->
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <h2 class="section-title">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto y Soporte
+          </h2>
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3>¿Necesitas ayuda?</h3>
+              <p>Nuestro equipo está disponible 24/7 para asistirte.</p>
+
+              <div class="contact-methods">
+                <div class="contact-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <div>
+                    <strong>Teléfono</strong>
+                    <span>+52 (555) 123-4567</span>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <div>
+                    <strong>Email</strong>
+                    <span>soporte@sorteos.com</span>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <i class="fa-solid fa-comments"></i>
+                  <div>
+                    <strong>Chat en Vivo</strong>
+                    <span>Disponible 24/7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+              <div class="input-group">
+                <label>Nombre</label>
+                <input type="text" id="contactName" placeholder="Tu nombre" required>
+              </div>
+
+              <div class="input-group">
+                <label>Correo</label>
+                <input type="email" id="contactEmail" placeholder="tu@email.com" required>
+              </div>
+
+              <div class="input-group">
+                <label>Mensaje</label>
+                <textarea id="contactMsg" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>
+                Enviar Mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="logo">
+              <div class="logo-circle">💰</div>
+              <span>Sorteos</span>
+            </div>
+            <p>La plataforma más confiable de sorteos de dinero en México.</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+              <li><a href="#como-funciona">Cómo Funciona</a></li>
+              <li><a href="#registro">Participar</a></li>
+              <li><a href="#buscar">Sorteos Activos</a></li>
+              <li><a href="#estadisticas">Estadísticas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Soporte</h4>
+            <ul>
+              <li><a href="#contacto">Contacto</a></li>
+              <li><a href="#">Términos y Condiciones</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Conecta con Nosotros</h4>
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Sorteos de Dinero. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modales -->
+    <div id="profileModal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="closeProfile">
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <h3>
+          <i class="fa-solid fa-user-pen"></i>
+          Tu Perfil
+        </h3>
+        <div class="profile-form">
+          <div class="profile-avatar">
+            <div class="avatar-preview" id="profileImagePreview">👤</div>
+            <input type="file" id="profileUpload" accept="image/*" hidden>
+            <button onclick="document.getElementById('profileUpload').click()" class="btn-outline">
+              <i class="fa-solid fa-camera"></i>
+              Cambiar Foto
+            </button>
+          </div>
+
+          <div class="profile-fields">
+            <div class="input-group">
+              <label>Nombre</label>
+              <input type="text" id="profileName" placeholder="Tu nombre">
+            </div>
+
+            <div class="input-group">
+              <label>Email</label>
+              <input type="email" id="profileEmail" placeholder="tu@email.com">
+            </div>
+
+            <button id="saveProfile" class="btn-primary">
+              <i class="fa-solid fa-save"></i>
+              Guardar Perfil
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="searchModal" class="modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content modal-small">
+        <button class="modal-close" id="closeSearch">
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <h3>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Buscar Sorteos
+        </h3>
+        <div class="search-form">
+          <input id="searchModalInput" type="text" placeholder="Buscar sorteos..." autofocus>
+          <div id="searchModalList" class="search-results"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+      <button class="chat-toggle" id="chatToggle">
+        <i class="fa-solid fa-comments"></i>
+        <span class="chat-badge">1</span>
+      </button>
+
+      <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+          <h4>Soporte en Vivo</h4>
+          <button class="chat-close" id="chatClose">
+            <i class="fa-solid fa-times"></i>
+          </button>
+        </div>
+
+        <div class="chat-messages">
+          <div class="chat-message bot">
+            <div class="message-avatar">🤖</div>
+            <div class="message-content">
+              <p>¡Hola! ¿En qué puedo ayudarte hoy?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-input">
+          <input type="text" placeholder="Escribe tu mensaje..." id="chatInput">
+          <button id="chatSend">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js">
+
+
+
+
+
+
+
+
+    
+    </script>
+</body>
+
+</html>
